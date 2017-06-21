@@ -105,7 +105,7 @@ word_t ssig1(word_t x){
 }
 
 template<typename RaIter1, typename RaIter2>
-void hash256_block(RaIter1 message_digest, RaIter2 first, RaIter2 last){
+void hash256_block(RaIter1 message_digest, RaIter2 first, RaIter2 /*last*/){
 	word_t w[64];
 	std::fill(w, w+64, 0);
 	for(std::size_t i = 0; i < 16; ++i){
